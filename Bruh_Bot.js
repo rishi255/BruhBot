@@ -90,6 +90,12 @@ BRUH_BOT.on('message', msg => {
                 msg.reply (" specify a user, or I'll ban your ass instead");
             }
         }
+        
+        if(msg.content.startsWith('screm', 5))
+        {
+            channel.send("i has no mouth, and i must screm");
+            channel.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        }
     }
 });
 
