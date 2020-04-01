@@ -97,8 +97,7 @@ BRUH_BOT.on('message', msg => {
         
         if(msg.content.startsWith('screm', 5))
         {
-            channel.send("i has no mouth, and i must screm");
-            channel.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            channel.send("i has no mouth, and i must screm...AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", {tts: true});
         }
     }
 });
