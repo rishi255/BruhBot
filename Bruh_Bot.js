@@ -4,8 +4,12 @@ const hiddenconfig = require('./hiddenconfig.json');
 const BRUH_BOT = new Client();
 
 BRUH_BOT.on('ready', () => {
-    console.log(`Logged in as ${BRUH_BOT.user.tag}, with ${BRUH_BOT.users.cache.size} users, in ${BRUH_BOT.channels.cache.size} channels of ${BRUH_BOT.guilds.cache.size} guilds.`);
+    console.log(`Logged in as ${BRUH_BOT.user.tag}, with ${BRUH_BOT.users.cache.size} users, in ${BRUH_BOT.channels.cache.size} channels of ${BRUH_BOT.guilds.cache.size} servers.`);
 //  console.log(client);
+    BRUH_BOT.user.setActivity('with depression', {
+        type: "PLAYING",
+        url: "https://www.twitch.tv/monstercat"
+    });
 });
 
 BRUH_BOT.on('message', msg => {
