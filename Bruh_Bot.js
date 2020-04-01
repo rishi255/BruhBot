@@ -19,6 +19,13 @@ BRUH_BOT.on('message', msg => {
 
     if (msg.content.startsWith(config.prefix))
     {
+        
+        if(msg.content.startsWith('screm', 5))
+        {
+            channel.send("i has no mouth, and i must screm");
+            channel.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        }
+        
         if(msg.content.startsWith('sound', 5))
         {
             const bruhsound = new MessageAttachment('https://www.myinstants.com/media/sounds/movie_1.mp3');
@@ -91,11 +98,6 @@ BRUH_BOT.on('message', msg => {
             }
         }
         
-        if(msg.content.startsWith('screm', 5))
-        {
-            channel.send("i has no mouth, and i must screm");
-            channel.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        }
     }
 });
 
