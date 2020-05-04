@@ -15,7 +15,7 @@ BRUH_BOT.on('ready', () => {
 BRUH_BOT.on('message', msg => {
     const channel = msg.channel;
     if (msg.content.toLowerCase().endsWith('ing')) {
-        channel.send(msg.content.substr(0, msg.content.length - 3) + 'ong');
+        channel.send(msg.content.substr(0, msg.content.length - 3) + 'ong', {tts: true});
     }
     if (msg.content.toLowerCase() === 'marco') {
         channel.send('polo');     
